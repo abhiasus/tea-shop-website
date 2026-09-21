@@ -230,7 +230,140 @@
 
         }
 
-    </style>
+    
+
+
+.navbar{
+    background:#24382c;
+    padding:15px 0;
+}
+
+.navbar-brand{
+    color:#e5c27b;
+    font-size:27px;
+    font-weight:bold;
+}
+
+.navbar-brand:hover{
+    color:#fff;
+}
+
+.nav-link{
+    color:#fff;
+    margin-left:12px;
+}
+
+.nav-link:hover{
+    color:#e5c27b;
+}
+
+.navbar-toggler{
+    border:1px solid #fff;
+}
+
+.navbar-toggler-icon{
+    filter:brightness(0) invert(1);
+}
+
+
+
+/*FOOTEROVERRIDE*/
+
+
+.footer{
+    color:#fff;
+
+    padding-top:90px;
+    padding-bottom:20px;
+
+    min-height:500px;
+
+    background-image:
+    linear-gradient(
+        rgba(32,48,32,.25),
+        rgba(32,48,32,.25)
+    ),
+    url("tea-shop-footer.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.footer h4{
+    color:#e5c27b;
+    margin-bottom:20px;
+}
+
+.footer a{
+    color:#fff;
+    text-decoration:none;
+    display:block;
+    margin-bottom:11px;
+    font-size:14px;
+}
+
+.footer a:hover{
+    color:#e5c27b;
+}
+
+.footer p{
+    font-size:14px;
+    line-height:1.8;
+}
+
+.footer-logo{
+    color:#e5c27b;
+    font-size:27px;
+    font-weight:bold;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.35);
+    margin-top:60px;
+    padding:22px 0;
+    text-align:center;
+}
+
+
+
+
+
+@media(max-width:768px){
+
+    .hero{
+        min-height:560px;
+    }
+
+    .hero h1{
+        font-size:44px;
+    }
+
+    .page-head h1{
+        font-size:40px;
+    }
+
+    .section-title{
+        font-size:35px;
+    }
+
+    .info-img{
+        height:500px;
+    }
+
+    .footer{
+        min-height:600px;
+        text-align:center;
+    }
+
+    .footer a{
+        text-align:center;
+    }
+
+}
+
+
+</style>
 
 </head>
 
@@ -238,95 +371,77 @@
 <body>
 
 
-<!-- NAVBAR -->
+
 
 <nav class="navbar navbar-expand-lg">
 
-    <div class="container">
+<div class="container">
 
-        <a class="navbar-brand" href="index.html">
-            Leaf & Kettle
-        </a>
+<a class="navbar-brand" href="index.html">
+Leaf &amp; Kettle
+</a>
 
+<button
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#mainNav"
+aria-controls="mainNav"
+aria-expanded="false"
+aria-label="Toggle navigation">
 
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarMenu"
-            aria-controls="navbarMenu"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
+<span class="navbar-toggler-icon"></span>
 
-            <span class="navbar-toggler-icon"></span>
-
-        </button>
+</button>
 
 
-        <div class="collapse navbar-collapse" id="navbarMenu">
+<div class="collapse navbar-collapse" id="mainNav">
 
-            <ul class="navbar-nav ms-auto">
+<ul class="navbar-nav ms-auto">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">
-                        Home
-                    </a>
-                </li>
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">
-                        About
-                    </a>
-                </li>
+<li class="nav-item">
+<a class="nav-link" href="about.html">About</a>
+</li>
 
-                <li class="nav-item">
-                    <a class="nav-link active" href="shop.html">
-                        Tea Shop
-                    </a>
-                </li>
+<li class="nav-item">
+<a class="nav-link" href="shop.html">Tea Shop</a>
+</li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="reviews.html">
-                        Reviews
-                    </a>
-                </li>
+<li class="nav-item">
+<a class="nav-link" href="reviews.html">Reviews</a>
+</li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="blog.html">
-                        Blog
-                    </a>
-                </li>
+<li class="nav-item">
+<a class="nav-link" href="blog.html">Blog</a>
+</li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">
-                        Contact
-                    </a>
-                </li>
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="htm.html">
-                        HTM
-                    </a>
-                </li>
+<li class="nav-item">
+<a class="nav-link" href="cart.html">Cart</a>
+</li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="cart.html">
-                        Cart
-                    </a>
-                </li>
+<li class="nav-item">
+<a class="nav-link" href="htm.html">HTM</a>
+</li>
 
-            </ul>
+</ul>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
 </nav>
 
 
 
-<!-- PAGE HEADER -->
+
 
 <section class="page-head">
 
@@ -346,7 +461,7 @@
 
 
 
-<!-- DRINKING TEAS -->
+
 
 <section class="section">
 
@@ -360,7 +475,7 @@
         <div class="row g-4">
 
 
-            <!-- MASALA CHAI -->
+            
 
             <div class="col-md-6 col-lg-4">
 
@@ -404,7 +519,7 @@
 
 
 
-            <!-- GINGER TEA -->
+            
 
             <div class="col-md-6 col-lg-4">
 
@@ -448,7 +563,7 @@
 
 
 
-            <!-- GREEN TEA -->
+            
 
             <div class="col-md-6 col-lg-4">
 
@@ -492,7 +607,7 @@
 
 
 
-            <!-- LEMON TEA -->
+            
 
             <div class="col-md-6 col-lg-4">
 
@@ -536,7 +651,7 @@
 
 
 
-            <!-- ICED TEA -->
+            
 
             <div class="col-md-6 col-lg-4">
 
@@ -580,7 +695,7 @@
 
 
 
-            <!-- HERBAL TEA -->
+            
 
             <div class="col-md-6 col-lg-4">
 
@@ -630,7 +745,7 @@
 
 
 
-<!-- TEA POWDERS -->
+
 
 <section class="section">
 
@@ -644,7 +759,7 @@
         <div class="row g-4">
 
 
-            <!-- MASALA CHAI POWDER -->
+            
 
             <div class="col-md-6 col-lg-4">
 
@@ -688,7 +803,7 @@
 
 
 
-            <!-- MATCHA GREEN POWDER -->
+            
 
             <div class="col-md-6 col-lg-4">
 
@@ -732,7 +847,7 @@
 
 
 
-            <!-- CARDAMOM TEA POWDER -->
+            
 
             <div class="col-md-6 col-lg-4">
 
@@ -782,126 +897,134 @@
 
 
 
-<!-- FOOTER -->
+
 
 <footer class="footer">
 
-    <div class="container py-5">
+<div class="container py-5">
 
-        <div class="row g-5">
-
-
-            <div class="col-lg-4">
-
-                <div class="footer-logo">
-                    Leaf & Kettle
-                </div>
-
-                <p class="mt-3">
-                    Thoughtfully prepared tea powders for simple,
-                    beautiful tea moments.
-                </p>
-
-                <p>
-                    +91 98765 43210
-                    <br>
-                    hello@leafandkettle.com
-                </p>
-
-            </div>
+<div class="row g-5">
 
 
 
-            <div class="col-lg-2">
 
-                <h4>
-                    Explore
-                </h4>
+<div class="col-lg-4">
 
-                <a href="index.html">
-                    Home
-                </a>
+<div class="footer-logo">
+Leaf &amp; Kettle
+</div>
 
-                <a href="about.html">
-                    About
-                </a>
+<p class="mt-3">
+Thoughtfully prepared tea powders for simple, beautiful tea moments.
+</p>
 
-                <a href="shop.html">
-                    Tea Shop
-                </a>
+<p>
++91 98765 43210<br>
+hello@leafandkettle.com
+</p>
 
-                <a href="reviews.html">
-                    Reviews
-                </a>
-
-            </div>
+</div>
 
 
 
-            <div class="col-lg-3">
-
-                <h4>
-                    Information
-                </h4>
-
-                <a href="blog.html">
-                    Blog
-                </a>
-
-                <a href="contact.html">
-                    Contact
-                </a>
-
-                <a href="htm.html">
-                    How To Make Tea
-                </a>
-
-                <a href="cart.html">
-                    Cart
-                </a>
-
-            </div>
 
 
+<div class="col-lg-2">
 
-            <div class="col-lg-3">
+<h4>
+Explore
+</h4>
 
-                <h4>
-                    Visit Us
-                </h4>
+<a href="index.html">
+Home
+</a>
 
-                <p>
-                    12 Garden Lane,
-                    <br>
-                    Bengaluru, Karnataka
-                    <br>
-                    India - 560001
-                </p>
+<a href="about.html">
+About
+</a>
 
-                <p>
-                    Instagram &nbsp;
-                    Facebook &nbsp;
-                    YouTube
-                </p>
+<a href="shop.html">
+Tea Shop
+</a>
 
-            </div>
+<a href="reviews.html">
+Reviews
+</a>
 
-        </div>
-
-    </div>
+</div>
 
 
-    <div class="footer-bottom">
 
-        &copy; 2026 Leaf & Kettle. All Rights Reserved.
 
-    </div>
+
+<div class="col-lg-3">
+
+<h4>
+Information
+</h4>
+
+<a href="blog.html">
+Blog
+</a>
+
+<a href="contact.html">
+Contact
+</a>
+
+<a href="htm.html">
+How To Make Tea
+</a>
+
+<a href="cart.html">
+Cart
+</a>
+
+</div>
+
+
+
+
+
+<div class="col-lg-3">
+
+<h4>
+Visit Us
+</h4>
+
+<p>
+12 Garden Lane,<br>
+Bengaluru, Karnataka<br>
+India - 560001
+</p>
+
+<p>
+Instagram &nbsp;
+Facebook &nbsp;
+YouTube
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="footer-bottom">
+
+&copy; 2026 Leaf &amp; Kettle. All Rights Reserved.
+
+</div>
 
 </footer>
 
 
 
-<!-- BOOTSTRAP JAVASCRIPT -->
+
 
 <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
@@ -909,7 +1032,7 @@
 
 
 
-<!-- CART JAVASCRIPT -->
+
 
 <script>
 
