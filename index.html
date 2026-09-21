@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Leaf & Kettle - Home</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    background:#f5f1e8;
+    color:#29251f;
+    font-family:Georgia,"Times New Roman",serif;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background:#24382c;
+    padding:15px 0;
+}
+
+.navbar-brand{
+    color:#e5c27b;
+    font-size:27px;
+    font-weight:bold;
+}
+
+.navbar-brand:hover{
+    color:#fff;
+}
+
+.nav-link{
+    color:#fff;
+    margin-left:12px;
+}
+
+.nav-link:hover{
+    color:#e5c27b;
+}
+
+.navbar-toggler{
+    border:1px solid #fff;
+}
+
+.navbar-toggler-icon{
+    filter:brightness(0) invert(1);
+}
+
+
+/* HERO */
+
+.hero{
+    min-height:650px;
+
+    background:
+    linear-gradient(
+        rgba(25,40,31,.48),
+        rgba(25,40,31,.48)
+    ),
+    url("https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
+
+    display:flex;
+    align-items:center;
+    color:#fff;
+}
+
+.hero h1{
+    font-size:68px;
+    max-width:720px;
+}
+
+.hero p{
+    font-size:18px;
+    line-height:1.8;
+    max-width:650px;
+}
+
+.gold-btn{
+    background:#d8b36a;
+    color:#24382c;
+    border:0;
+    padding:13px 28px;
+    text-decoration:none;
+    display:inline-block;
+    font-weight:bold;
+}
+
+.gold-btn:hover{
+    background:#fff;
+    color:#24382c;
+}
+
+
+/* SECTIONS */
+
+.section{
+    padding:75px 0;
+}
+
+.section-title{
+    font-size:44px;
+}
+
+.section-text{
+    line-height:1.9;
+    font-size:17px;
+}
+
+
+/* PAGE HEADER */
+
+.page-head{
+    padding:100px 0;
+
+    background:
+    linear-gradient(
+        rgba(30,48,36,.65),
+        rgba(30,48,36,.65)
+    ),
+    url("https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
+
+    color:#fff;
+}
+
+.page-head h1{
+    font-size:55px;
+}
+
+
+/* TEA CARDS */
+
+.card-tea{
+    background:#fff;
+    border:1px solid #ded8ca;
+    height:100%;
+    overflow:hidden;
+}
+
+.card-tea img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.card-body{
+    padding:23px;
+}
+
+.price{
+    color:#557653;
+    font-size:20px;
+    font-weight:bold;
+}
+
+
+/* GIF / INFORMATION IMAGE */
+
+.info-img{
+    width:100%;
+    height:600px;
+    object-fit:contain;
+    display:block;
+    background:#f5f1e8;
+}
+
+
+/* REVIEWS */
+
+.review{
+    background:#fff;
+    padding:28px;
+    border:1px solid #ded8ca;
+    height:100%;
+}
+
+.stars{
+    color:#d09b37;
+    font-size:20px;
+}
+
+
+/* BLOG */
+
+.blog-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.blog-card{
+    background:#fff;
+    border:1px solid #ded8ca;
+    height:100%;
+}
+
+.blog-content{
+    padding:23px;
+}
+
+
+/* FORMS / CART / STEPS */
+
+.form-box,
+.summary,
+.cart-item,
+.step-box{
+    background:#fff;
+    border:1px solid #ded8ca;
+    padding:25px;
+}
+
+.step-box{
+    height:100%;
+}
+
+.step-number{
+    font-size:38px;
+    color:#d09b37;
+    font-weight:bold;
+}
+
+
+/* POWDER IMAGE */
+
+.powder-img{
+    width:100%;
+    height:330px;
+    object-fit:cover;
+}
+
+
+/* FOOTER */
+
+.footer{
+    color:#fff;
+
+    padding-top:90px;
+    padding-bottom:20px;
+
+    min-height:500px;
+
+    background-image:
+    linear-gradient(
+        rgba(32,48,32,.25),
+        rgba(32,48,32,.25)
+    ),
+    url("tea-shop-footer.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.footer h4{
+    color:#e5c27b;
+    margin-bottom:20px;
+}
+
+.footer a{
+    color:#fff;
+    text-decoration:none;
+    display:block;
+    margin-bottom:11px;
+    font-size:14px;
+}
+
+.footer a:hover{
+    color:#e5c27b;
+}
+
+.footer p{
+    font-size:14px;
+    line-height:1.8;
+}
+
+.footer-logo{
+    color:#e5c27b;
+    font-size:27px;
+    font-weight:bold;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.35);
+    margin-top:60px;
+    padding:22px 0;
+    text-align:center;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .hero{
+        min-height:560px;
+    }
+
+    .hero h1{
+        font-size:44px;
+    }
+
+    .page-head h1{
+        font-size:40px;
+    }
+
+    .section-title{
+        font-size:35px;
+    }
+
+    .info-img{
+        height:500px;
+    }
+
+    .footer{
+        min-height:600px;
+        text-align:center;
+    }
+
+    .footer a{
+        text-align:center;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg">
+
+<div class="container">
+
+<a class="navbar-brand" href="index.html">
+Leaf &amp; Kettle
+</a>
+
+<button
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#mainNav"
+aria-controls="mainNav"
+aria-expanded="false"
+aria-label="Toggle navigation">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+
+<div class="collapse navbar-collapse" id="mainNav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="about.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="shop.html">Tea Shop</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="reviews.html">Reviews</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="blog.html">Blog</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="cart.html">Cart</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="htm.html">HTM</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container">
+
+<h1>
+Tea Made for Slow Moments
+</h1>
+
+<p>
+Discover beautifully blended tea powders, simple brewing rituals and flavours made for everyday moments.
+</p>
+
+<a href="shop.html" class="gold-btn">
+Shop Our Teas
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- INTRODUCTION -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="row align-items-center g-5">
+
+<div class="col-lg-6">
+
+<h2 class="section-title">
+A Different Way to Enjoy Tea
+</h2>
+
+<p class="section-text">
+Leaf &amp; Kettle brings carefully selected tea powders into your everyday kitchen. Each blend has its own character, aroma and way of preparation.
+</p>
+
+<p class="section-text">
+Whether you want a strong morning cup, a refreshing afternoon drink or a calming evening blend, there is a tea for the moment.
+</p>
+
+<a href="about.html" class="gold-btn">
+Our Story
+</a>
+
+</div>
+
+
+<div class="col-lg-6">
+
+<img
+class="info-img"
+src="tea.gif"
+alt="Making tea">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- TEA PRODUCTS -->
+
+<section class="section" style="background:#e8dfd0">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+Explore Our Tea Powders
+</h2>
+
+<p>
+Three blends, three different tea experiences.
+</p>
+
+</div>
+
+
+<div class="row g-4">
+
+
+<!-- MASALA CHAI -->
+
+<div class="col-md-4">
+
+<div class="card-tea">
+
+<img
+src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=900&q=85"
+alt="Masala Chai">
+
+<div class="card-body">
+
+<h3>
+Masala Chai
+</h3>
+
+<p>
+Warm spices and bold tea character.
+</p>
+
+<a href="htm.html" class="gold-btn">
+How To Make
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- MATCHA -->
+
+<div class="col-md-4">
+
+<div class="card-tea">
+
+<img
+src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=900&q=85"
+alt="Matcha Green">
+
+<div class="card-body">
+
+<h3>
+Matcha Green
+</h3>
+
+<p>
+Fresh, earthy and smooth.
+</p>
+
+<a href="htm.html" class="gold-btn">
+How To Make
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- HERBAL -->
+
+<div class="col-md-4">
+
+<div class="card-tea">
+
+<img
+src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?auto=format&fit=crop&w=900&q=85"
+alt="Herbal Calm">
+
+<div class="card-body">
+
+<h3>
+Herbal Calm
+</h3>
+
+<p>
+Light botanical notes for a peaceful cup.
+</p>
+
+<a href="htm.html" class="gold-btn">
+How To Make
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="container py-5">
+
+<div class="row g-5">
+
+
+<!-- BRAND -->
+
+<div class="col-lg-4">
+
+<div class="footer-logo">
+Leaf &amp; Kettle
+</div>
+
+<p class="mt-3">
+Thoughtfully prepared tea powders for simple, beautiful tea moments.
+</p>
+
+<p>
++91 98765 43210<br>
+hello@leafandkettle.com
+</p>
+
+</div>
+
+
+
+<!-- EXPLORE -->
+
+<div class="col-lg-2">
+
+<h4>
+Explore
+</h4>
+
+<a href="index.html">
+Home
+</a>
+
+<a href="about.html">
+About
+</a>
+
+<a href="shop.html">
+Tea Shop
+</a>
+
+<a href="reviews.html">
+Reviews
+</a>
+
+</div>
+
+
+
+<!-- INFORMATION -->
+
+<div class="col-lg-3">
+
+<h4>
+Information
+</h4>
+
+<a href="blog.html">
+Blog
+</a>
+
+<a href="contact.html">
+Contact
+</a>
+
+<a href="htm.html">
+How To Make Tea
+</a>
+
+<a href="cart.html">
+Cart
+</a>
+
+</div>
+
+
+
+<!-- VISIT US -->
+
+<div class="col-lg-3">
+
+<h4>
+Visit Us
+</h4>
+
+<p>
+12 Garden Lane,<br>
+Bengaluru, Karnataka<br>
+India - 560001
+</p>
+
+<p>
+Instagram &nbsp;
+Facebook &nbsp;
+YouTube
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<!-- COPYRIGHT -->
+
+<div class="footer-bottom">
+
+&copy; 2026 Leaf &amp; Kettle. All Rights Reserved.
+
+</div>
+
+</footer>
+
+
+
+<!-- BOOTSTRAP JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
