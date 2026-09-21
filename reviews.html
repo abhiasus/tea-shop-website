@@ -9,661 +9,708 @@
 
     <title>Reviews - Leaf & Kettle</title>
 
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-
-        body{
-            margin:0;
-            background:#f5f1e8;
-            color:#29251f;
-            font-family:Georgia,"Times New Roman",serif;
+        body {
+            margin: 0;
+            background: #f5f1e8;
+            color: #29251f;
+            font-family: Georgia, "Times New Roman", serif;
         }
 
-
-        /* NAVBAR */
-
-        .navbar{
-            background:#24382c;
-            padding:15px 0;
+        .navbar {
+            background: #24382c;
+            padding: 15px 0;
         }
 
-        .navbar-brand{
-            color:#e5c27b;
-            font-size:27px;
-            font-weight:bold;
+        .navbar-brand {
+            color: #e5c27b;
+            font-size: 27px;
+            font-weight: bold;
         }
 
-        .navbar-brand:hover{
-            color:#fff;
+        .navbar-brand:hover {
+            color: #fff;
         }
 
-        .nav-link{
-            color:#fff;
-            margin-left:12px;
+        .nav-link {
+            color: #fff;
+            margin-left: 12px;
         }
 
-        .nav-link:hover{
-            color:#e5c27b;
+        .nav-link:hover {
+            color: #e5c27b;
         }
 
-        .navbar-toggler{
-            border:1px solid #fff;
+        .navbar-toggler {
+            border: 1px solid #fff;
         }
 
-        .navbar-toggler-icon{
-            filter:brightness(0) invert(1);
+        .navbar-toggler-icon {
+            filter: brightness(0) invert(1);
         }
 
-
-        /* PAGE HEADER */
-
-        .page-head{
-            padding:100px 0;
-
+        .page-head {
+            padding: 100px 0;
             background:
-            linear-gradient(
-                rgba(30,48,36,.65),
-                rgba(30,48,36,.65)
-            ),
-            url("https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=1800&q=85")
-            center/cover;
-
-            color:#fff;
+                linear-gradient(rgba(30, 48, 36, .65),
+                    rgba(30, 48, 36, .65)),
+                url("https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=1800&q=85") center/cover;
+            color: #fff;
         }
 
-        .page-head h1{
-            font-size:55px;
+        .page-head h1 {
+            font-size: 55px;
         }
 
-        .page-head p{
-            font-size:18px;
+        .page-head p {
+            font-size: 18px;
         }
 
-
-        /* SECTION */
-
-        .section{
-            padding:75px 0;
+        .section {
+            padding: 75px 0;
         }
 
-        .section-title{
-            text-align:center;
-            font-size:40px;
-            margin-bottom:45px;
+        .section-title {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 45px;
         }
 
-
-        /* REVIEW CARDS */
-
-        .review-card{
-            background:#fff;
-            border:1px solid #ded8ca;
-            padding:30px;
-            height:100%;
+        .review-card {
+            background: #fff;
+            border: 1px solid #ded8ca;
+            padding: 30px;
+            height: 100%;
         }
 
-        .review-card h3{
-            font-size:23px;
-            margin-bottom:10px;
+        .review-card h3 {
+            font-size: 23px;
+            margin-bottom: 10px;
         }
 
-        .review-card p{
-            line-height:1.7;
+        .review-card p {
+            line-height: 1.7;
         }
 
-        .stars{
-            color:#d8b36a;
-            font-size:22px;
-            margin-bottom:15px;
+        .stars {
+            color: #d8b36a;
+            font-size: 22px;
+            margin-bottom: 15px;
         }
 
-
-        /* WRITE REVIEW SECTION */
-
-        .review-section{
-            background:#e8dfd0;
-            padding:80px 0;
-            text-align:center;
+        .review-section {
+            background: #e8dfd0;
+            padding: 80px 0;
+            text-align: center;
         }
 
-        .review-section p{
-            font-size:17px;
-            margin-bottom:25px;
+        .review-section p {
+            font-size: 17px;
+            margin-bottom: 25px;
         }
 
-
-        /* BUTTON */
-
-        .gold-btn{
-            background:#d8b36a;
-            color:#24382c;
-            border:0;
-            padding:13px 28px;
-            text-decoration:none;
-            display:inline-block;
-            font-weight:bold;
-            cursor:pointer;
+        .gold-btn {
+            background: #d8b36a;
+            color: #24382c;
+            border: 0;
+            padding: 13px 28px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            cursor: pointer;
         }
 
-        .gold-btn:hover{
-            background:#fff;
-            color:#24382c;
+        .gold-btn:hover {
+            background: #fff;
+            color: #24382c;
         }
 
-
-        /* REVIEW BOX */
-
-        .review-box{
-            display:none;
-            max-width:600px;
-            margin:35px auto 0;
-            background:#fff;
-            padding:35px;
-            border:1px solid #ded8ca;
-            text-align:left;
+        .review-box {
+            display: none;
+            max-width: 600px;
+            margin: 35px auto 0;
+            background: #fff;
+            padding: 35px;
+            border: 1px solid #ded8ca;
+            text-align: left;
         }
 
-        .review-box h3{
-            text-align:center;
-            margin-bottom:30px;
-            font-size:28px;
+        .review-box h3 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
         }
 
-        .review-box label{
-            display:block;
-            margin-bottom:8px;
-            font-weight:bold;
+        .review-box label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
         }
 
-        .review-box .form-control{
-            border:1px solid #cfc7b7;
-            border-radius:0;
-            padding:12px;
+        .review-box .form-control {
+            border: 1px solid #cfc7b7;
+            border-radius: 0;
+            padding: 12px;
         }
 
-        .review-box .form-control:focus{
-            border-color:#d8b36a;
-            box-shadow:none;
+        .review-box .form-control:focus {
+            border-color: #d8b36a;
+            box-shadow: none;
         }
 
-        .review-submit{
-            text-align:center;
-            margin-top:25px;
+        .review-submit {
+            text-align: center;
+            margin-top: 25px;
         }
 
-
-        /* FOOTER */
-
-        .footer{
-            color:#fff;
-            padding-top:90px;
-            padding-bottom:20px;
-            min-height:500px;
-
+        .footer {
+            color: #fff;
+            padding-top: 90px;
+            padding-bottom: 20px;
+            min-height: 500px;
             background-image:
-            linear-gradient(
-                rgba(32,48,32,.25),
-                rgba(32,48,32,.25)
-            ),
-            url("tea-shop-footer.jpg");
-
-            background-size:cover;
-            background-position:center;
-            background-repeat:no-repeat;
+                linear-gradient(rgba(32, 48, 32, .25),
+                    rgba(32, 48, 32, .25)),
+                url("tea-shop-footer.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
-        .footer h4{
-            color:#e5c27b;
-            margin-bottom:20px;
+        .footer h4 {
+            color: #e5c27b;
+            margin-bottom: 20px;
         }
 
-        .footer a{
-            color:#fff;
-            text-decoration:none;
-            display:block;
-            margin-bottom:11px;
-            font-size:14px;
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 11px;
+            font-size: 14px;
         }
 
-        .footer a:hover{
-            color:#e5c27b;
+        .footer a:hover {
+            color: #e5c27b;
         }
 
-        .footer p{
-            font-size:14px;
-            line-height:1.8;
+        .footer p {
+            font-size: 14px;
+            line-height: 1.8;
         }
 
-        .footer-logo{
-            color:#e5c27b;
-            font-size:27px;
-            font-weight:bold;
+        .footer-logo {
+            color: #e5c27b;
+            font-size: 27px;
+            font-weight: bold;
         }
 
-        .footer-bottom{
-            border-top:1px solid rgba(255,255,255,.35);
-            margin-top:60px;
-            padding:22px 0;
-            text-align:center;
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, .35);
+            margin-top: 60px;
+            padding: 22px 0;
+            text-align: center;
         }
 
-
-        /* MOBILE */
-
-        @media(max-width:768px){
-
-            .page-head h1{
-                font-size:40px;
+        @media(max-width:768px) {
+            .page-head h1 {
+                font-size: 40px;
             }
 
-            .footer{
-                min-height:600px;
-                text-align:center;
+            .footer {
+                min-height: 600px;
+                text-align: center;
             }
 
-            .footer a{
-                text-align:center;
+            .footer a {
+                text-align: center;
             }
 
-            .review-box{
-                margin-left:15px;
-                margin-right:15px;
-                padding:25px;
+            .review-box {
+                margin-left: 15px;
+                margin-right: 15px;
+                padding: 25px;
             }
-
         }
 
-    
+        .navbar {
+            background: #24382c;
+            padding: 15px 0;
+        }
 
+        .navbar-brand {
+            color: #e5c27b;
+            font-size: 27px;
+            font-weight: bold;
+        }
 
-.navbar{
-    background:#24382c;
-    padding:15px 0;
-}
+        .navbar-brand:hover {
+            color: #fff;
+        }
 
-.navbar-brand{
-    color:#e5c27b;
-    font-size:27px;
-    font-weight:bold;
-}
+        .nav-link {
+            color: #fff;
+            margin-left: 12px;
+        }
 
-.navbar-brand:hover{
-    color:#fff;
-}
+        .nav-link:hover {
+            color: #e5c27b;
+        }
 
-.nav-link{
-    color:#fff;
-    margin-left:12px;
-}
+        .navbar-toggler {
+            border: 1px solid #fff;
+        }
 
-.nav-link:hover{
-    color:#e5c27b;
-}
+        .navbar-toggler-icon {
+            filter: brightness(0) invert(1);
+        }
 
-.navbar-toggler{
-    border:1px solid #fff;
-}
+        .footer {
+            color: #fff;
+            padding-top: 90px;
+            padding-bottom: 20px;
+            min-height: 500px;
+            background-image:
+                linear-gradient(rgba(32, 48, 32, .25),
+                    rgba(32, 48, 32, .25)),
+                url("tea-shop-footer.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
 
-.navbar-toggler-icon{
-    filter:brightness(0) invert(1);
-}
+        .footer h4 {
+            color: #e5c27b;
+            margin-bottom: 20px;
+        }
 
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 11px;
+            font-size: 14px;
+        }
 
+        .footer a:hover {
+            color: #e5c27b;
+        }
 
-/*FOOTEROVERRIDE*/
+        .footer p {
+            font-size: 14px;
+            line-height: 1.8;
+        }
 
+        .footer-logo {
+            color: #e5c27b;
+            font-size: 27px;
+            font-weight: bold;
+        }
 
-.footer{
-    color:#fff;
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, .35);
+            margin-top: 60px;
+            padding: 22px 0;
+            text-align: center;
+        }
 
-    padding-top:90px;
-    padding-bottom:20px;
+        @media(max-width:768px) {
+            .hero {
+                min-height: 560px;
+            }
 
-    min-height:500px;
+            .hero h1 {
+                font-size: 44px;
+            }
 
-    background-image:
-    linear-gradient(
-        rgba(32,48,32,.25),
-        rgba(32,48,32,.25)
-    ),
-    url("tea-shop-footer.jpg");
+            .page-head h1 {
+                font-size: 40px;
+            }
 
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-}
+            .section-title {
+                font-size: 35px;
+            }
 
-.footer h4{
-    color:#e5c27b;
-    margin-bottom:20px;
-}
+            .info-img {
+                height: 500px;
+            }
 
-.footer a{
-    color:#fff;
-    text-decoration:none;
-    display:block;
-    margin-bottom:11px;
-    font-size:14px;
-}
+            .footer {
+                min-height: 600px;
+                text-align: center;
+            }
 
-.footer a:hover{
-    color:#e5c27b;
-}
-
-.footer p{
-    font-size:14px;
-    line-height:1.8;
-}
-
-.footer-logo{
-    color:#e5c27b;
-    font-size:27px;
-    font-weight:bold;
-}
-
-.footer-bottom{
-    border-top:1px solid rgba(255,255,255,.35);
-    margin-top:60px;
-    padding:22px 0;
-    text-align:center;
-}
-
-
-
-
-
-@media(max-width:768px){
-
-    .hero{
-        min-height:560px;
-    }
-
-    .hero h1{
-        font-size:44px;
-    }
-
-    .page-head h1{
-        font-size:40px;
-    }
-
-    .section-title{
-        font-size:35px;
-    }
-
-    .info-img{
-        height:500px;
-    }
-
-    .footer{
-        min-height:600px;
-        text-align:center;
-    }
-
-    .footer a{
-        text-align:center;
-    }
-
-}
-
-
-</style>
+            .footer a {
+                text-align: center;
+            }
+        }
+    </style>
 
 </head>
 
-
 <body>
 
+    <nav class="navbar navbar-expand-lg">
 
+        <div class="container">
 
+            <a class="navbar-brand" href="index.html">
+                Leaf &amp; Kettle
+            </a>
 
-<nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
 
-<div class="container">
+                <span class="navbar-toggler-icon"></span>
 
-<a class="navbar-brand" href="index.html">
-Leaf &amp; Kettle
-</a>
+            </button>
 
-<button
-class="navbar-toggler"
-type="button"
-data-bs-toggle="collapse"
-data-bs-target="#mainNav"
-aria-controls="mainNav"
-aria-expanded="false"
-aria-label="Toggle navigation">
+            <div class="collapse navbar-collapse" id="mainNav">
 
-<span class="navbar-toggler-icon"></span>
+                <ul class="navbar-nav ms-auto">
 
-</button>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
 
-<div class="collapse navbar-collapse" id="mainNav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Tea Shop</a>
+                    </li>
 
-<ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">Reviews</a>
+                    </li>
 
-<li class="nav-item">
-<a class="nav-link" href="index.html">Home</a>
-</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
 
-<li class="nav-item">
-<a class="nav-link" href="about.html">About</a>
-</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
 
-<li class="nav-item">
-<a class="nav-link" href="shop.html">Tea Shop</a>
-</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Cart</a>
+                    </li>
 
-<li class="nav-item">
-<a class="nav-link" href="reviews.html">Reviews</a>
-</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="htm.html">HTM</a>
+                    </li>
 
-<li class="nav-item">
-<a class="nav-link" href="blog.html">Blog</a>
-</li>
+                </ul>
 
-<li class="nav-item">
-<a class="nav-link" href="contact.html">Contact</a>
-</li>
+            </div>
 
-<li class="nav-item">
-<a class="nav-link" href="cart.html">Cart</a>
-</li>
+        </div>
 
-<li class="nav-item">
-<a class="nav-link" href="htm.html">HTM</a>
-</li>
+    </nav>
 
-</ul>
+    <section class="page-head">
 
-</div>
+        <div class="container text-center">
 
-</div>
+            <h1>
+                Reviews
+            </h1>
 
-</nav>
+            <p>
+                See what tea lovers say about Leaf & Kettle.
+            </p>
 
+        </div>
 
+    </section>
 
+    <section class="section">
 
+        <div class="container">
 
-<section class="page-head">
+            <h2 class="section-title">
+                What Our Customers Say
+            </h2>
 
-    <div class="container text-center">
+            <div class="row g-4">
 
-        <h1>
-            Reviews
-        </h1>
+                <div class="col-md-6 col-lg-4">
 
-        <p>
-            See what tea lovers say about Leaf & Kettle.
-        </p>
+                    <div class="review-card">
 
-    </div>
+                        <div class="stars">
+                            ★★★★★
+                        </div>
 
-</section>
+                        <h3>
+                            Sania
+                        </h3>
 
+                        <p>
+                            The Masala Chai is warm, tasty and full of flavour.
+                            It is perfect for my evening tea.
+                        </p>
 
-
-
-
-<section class="section">
-
-    <div class="container">
-
-        <h2 class="section-title">
-            What Our Customers Say
-        </h2>
-
-
-        <div class="row g-4">
-
-
-            
-
-            <div class="col-md-6 col-lg-4">
-
-                <div class="review-card">
-
-                    <div class="stars">
-                        ★★★★★
                     </div>
 
-                    <h3>
-                        Priya
-                    </h3>
+                </div>
 
-                    <p>
-                        The Masala Chai is warm, tasty and full of flavour.
-                        It is perfect for my evening tea.
-                    </p>
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="review-card">
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <h3>
+                            Raj
+                        </h3>
+
+                        <p>
+                            I really liked the Matcha Green Powder.
+                            It is easy to prepare and has a smooth taste.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="review-card">
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <h3>
+                            Anu
+                        </h3>
+
+                        <p>
+                            The Ginger Tea has a nice fresh flavour.
+                            I enjoy having it in the morning.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="review-card">
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <h3>
+                            Arya
+                        </h3>
+
+                        <p>
+                            The Iced Tea is refreshing and perfect
+                            for a hot afternoon.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="review-card">
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <h3>
+                            Sofia
+                        </h3>
+
+                        <p>
+                            I loved the simple taste of the Herbal Tea.
+                            It is relaxing and easy to make.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="review-card">
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <h3>
+                            Jhon
+                        </h3>
+
+                        <p>
+                            The tea powders are convenient and taste
+                            great when prepared at home.
+                        </p>
+
+                    </div>
 
                 </div>
 
             </div>
 
+        </div>
 
+    </section>
 
-            
+    <section class="review-section">
 
-            <div class="col-md-6 col-lg-4">
+        <div class="container">
 
-                <div class="review-card">
+            <h2 class="section-title">
+                Share Your Experience
+            </h2>
 
-                    <div class="stars">
-                        ★★★★★
-                    </div>
+            <p>
+                Enjoyed your tea? Tell us about your favourite cup.
+            </p>
 
-                    <h3>
-                        Rahul
-                    </h3>
+            <button class="gold-btn" type="button" onclick="showReviewBox()">
+                Write a Review
+            </button>
 
-                    <p>
-                        I really liked the Matcha Green Powder.
-                        It is easy to prepare and has a smooth taste.
-                    </p>
+            <div id="reviewBox" class="review-box">
+
+                <h3>
+                    Write Your Review
+                </h3>
+
+                <div class="mb-4">
+
+                    <label for="reviewName">
+                        Your Name
+                    </label>
+
+                    <input type="text" id="reviewName" class="form-control" placeholder="Enter your name">
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label for="reviewText">
+                        Your Review
+                    </label>
+
+                    <textarea id="reviewText" class="form-control" rows="5" placeholder="Write your experience here..."></textarea>
+
+                </div>
+
+                <div class="review-submit">
+
+                    <button class="gold-btn" type="button" onclick="submitReview()">
+                        Submit Review
+                    </button>
 
                 </div>
 
             </div>
 
+        </div>
 
+    </section>
 
-            
+    <footer class="footer">
 
-            <div class="col-md-6 col-lg-4">
+        <div class="container py-5">
 
-                <div class="review-card">
+            <div class="row g-5">
 
-                    <div class="stars">
-                        ★★★★★
+                <div class="col-lg-4">
+
+                    <div class="footer-logo">
+                        Leaf &amp; Kettle
                     </div>
 
-                    <h3>
-                        Ananya
-                    </h3>
+                    <p class="mt-3">
+                        Thoughtfully prepared tea powders for simple, beautiful tea moments.
+                    </p>
 
                     <p>
-                        The Ginger Tea has a nice fresh flavour.
-                        I enjoy having it in the morning.
+                        +91 1111 11111<br>
+                        hello@leafandkettle.com
                     </p>
 
                 </div>
 
-            </div>
+                <div class="col-lg-2">
 
+                    <h4>
+                        Explore
+                    </h4>
 
+                    <a href="index.html">
+                        Home
+                    </a>
 
-            
+                    <a href="about.html">
+                        About
+                    </a>
 
-            <div class="col-md-6 col-lg-4">
+                    <a href="shop.html">
+                        Tea Shop
+                    </a>
 
-                <div class="review-card">
-
-                    <div class="stars">
-                        ★★★★★
-                    </div>
-
-                    <h3>
-                        Arjun
-                    </h3>
-
-                    <p>
-                        The Iced Tea is refreshing and perfect
-                        for a hot afternoon.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-
-            
-
-            <div class="col-md-6 col-lg-4">
-
-                <div class="review-card">
-
-                    <div class="stars">
-                        ★★★★★
-                    </div>
-
-                    <h3>
-                        Sneha
-                    </h3>
-
-                    <p>
-                        I loved the simple taste of the Herbal Tea.
-                        It is relaxing and easy to make.
-                    </p>
+                    <a href="reviews.html">
+                        Reviews
+                    </a>
 
                 </div>
 
-            </div>
+                <div class="col-lg-3">
 
+                    <h4>
+                        Information
+                    </h4>
 
+                    <a href="blog.html">
+                        Blog
+                    </a>
 
-            
+                    <a href="contact.html">
+                        Contact
+                    </a>
 
-            <div class="col-md-6 col-lg-4">
+                    <a href="htm.html">
+                        How To Make Tea
+                    </a>
 
-                <div class="review-card">
+                    <a href="cart.html">
+                        Cart
+                    </a>
 
-                    <div class="stars">
-                        ★★★★★
-                    </div>
+                </div>
 
-                    <h3>
-                        Kiran
-                    </h3>
+                <div class="col-lg-3">
+
+                    <h4>
+                        Visit Us
+                    </h4>
 
                     <p>
-                        The tea powders are convenient and taste
-                        great when prepared at home.
+                        12 Garden Lane,<br>
+                        Bengaluru, Karnataka<br>
+                        India - 560001
+                    </p>
+
+                    <p>
+                        Instagram &nbsp;
+                        Facebook &nbsp;
+                        YouTube
                     </p>
 
                 </div>
@@ -672,288 +719,37 @@ aria-label="Toggle navigation">
 
         </div>
 
-    </div>
+        <div class="footer-bottom">
 
-</section>
-
-
-
-
-
-<section class="review-section">
-
-    <div class="container">
-
-        <h2 class="section-title">
-            Share Your Experience
-        </h2>
-
-        <p>
-            Enjoyed your tea? Tell us about your favourite cup.
-        </p>
-
-
-        
-
-        <button
-            class="gold-btn"
-            type="button"
-            onclick="showReviewBox()"
-        >
-            Write a Review
-        </button>
-
-
-
-        
-
-        <div
-            id="reviewBox"
-            class="review-box"
-        >
-
-            <h3>
-                Write Your Review
-            </h3>
-
-
-            
-
-            <div class="mb-4">
-
-                <label for="reviewName">
-                    Your Name
-                </label>
-
-                <input
-                    type="text"
-                    id="reviewName"
-                    class="form-control"
-                    placeholder="Enter your name"
-                >
-
-            </div>
-
-
-
-            
-
-            <div class="mb-3">
-
-                <label for="reviewText">
-                    Your Review
-                </label>
-
-                <textarea
-                    id="reviewText"
-                    class="form-control"
-                    rows="5"
-                    placeholder="Write your experience here..."
-                ></textarea>
-
-            </div>
-
-
-
-            
-
-            <div class="review-submit">
-
-                <button
-                    class="gold-btn"
-                    type="button"
-                    onclick="submitReview()"
-                >
-                    Submit Review
-                </button>
-
-            </div>
+            &copy; 2026 Leaf &amp; Kettle. All Rights Reserved.
 
         </div>
 
-    </div>
+    </footer>
 
-</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
 
-
-
-
-
-<footer class="footer">
-
-<div class="container py-5">
-
-<div class="row g-5">
-
-
-
-
-<div class="col-lg-4">
-
-<div class="footer-logo">
-Leaf &amp; Kettle
-</div>
-
-<p class="mt-3">
-Thoughtfully prepared tea powders for simple, beautiful tea moments.
-</p>
-
-<p>
-+91 98765 43210<br>
-hello@leafandkettle.com
-</p>
-
-</div>
-
-
-
-
-
-<div class="col-lg-2">
-
-<h4>
-Explore
-</h4>
-
-<a href="index.html">
-Home
-</a>
-
-<a href="about.html">
-About
-</a>
-
-<a href="shop.html">
-Tea Shop
-</a>
-
-<a href="reviews.html">
-Reviews
-</a>
-
-</div>
-
-
-
-
-
-<div class="col-lg-3">
-
-<h4>
-Information
-</h4>
-
-<a href="blog.html">
-Blog
-</a>
-
-<a href="contact.html">
-Contact
-</a>
-
-<a href="htm.html">
-How To Make Tea
-</a>
-
-<a href="cart.html">
-Cart
-</a>
-
-</div>
-
-
-
-
-
-<div class="col-lg-3">
-
-<h4>
-Visit Us
-</h4>
-
-<p>
-12 Garden Lane,<br>
-Bengaluru, Karnataka<br>
-India - 560001
-</p>
-
-<p>
-Instagram &nbsp;
-Facebook &nbsp;
-YouTube
-</p>
-
-</div>
-
-
-</div>
-
-</div>
-
-
-
-
-
-<div class="footer-bottom">
-
-&copy; 2026 Leaf &amp; Kettle. All Rights Reserved.
-
-</div>
-
-</footer>
-
-
-
-
-
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
-
-
-
-
-
-<script>
-
-    function showReviewBox(){
-
-        document.getElementById("reviewBox").style.display = "block";
-
-    }
-
-
-    function submitReview(){
-
-        var name =
-            document.getElementById("reviewName").value.trim();
-
-        var review =
-            document.getElementById("reviewText").value.trim();
-
-
-        if(name == "" || review == ""){
-
-            alert("Please enter your name and review.");
-
+    <script>
+        function showReviewBox() {
+            document.getElementById("reviewBox").style.display = "block";
         }
 
-        else{
-
-            alert("Thank you for giving a review!");
-
-            document.getElementById("reviewName").value = "";
-
-            document.getElementById("reviewText").value = "";
-
-            document.getElementById("reviewBox").style.display = "none";
-
+        function submitReview() {
+            var name =
+                document.getElementById("reviewName").value.trim();
+            var review =
+                document.getElementById("reviewText").value.trim();
+            if (name == "" || review == "") {
+                alert("Please enter your name and review.");
+            } else {
+                alert("Thank you for giving a review!");
+                document.getElementById("reviewName").value = "";
+                document.getElementById("reviewText").value = "";
+                document.getElementById("reviewBox").style.display = "none";
+            }
         }
-
-    }
-
-</script>
-
+    </script>
 
 </body>
 
